@@ -39,6 +39,7 @@ No modules.
 | <a name="input_organization_name"></a> [organization\_name](#input\_organization\_name) | The name of the organization to use. | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | The name of the project to use. | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | A list of tags to add to the workspace. | `list(string)` | `[]` | no |
+| <a name="input_vcs_repo"></a> [vcs\_repo](#input\_vcs\_repo) | The VCS repository to associate with the workspace. | <pre>object({<br>    github_app_installation_id = string<br>    identifier                 = string<br>  })</pre> | `null` | no |
 
 ## Outputs
 

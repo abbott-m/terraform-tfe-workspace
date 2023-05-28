@@ -8,4 +8,13 @@ resource "tfe_workspace" "self" {
   organization        = data.tfe_organization.self.name
   project_id          = data.tfe_project.self.id
   tag_names           = var.tags
+
+  dynamic "vcs_repo" {
+    for_each = var.vcs_repo != null ? [1] : []
+
+    content {
+      identifier                 = var.vcs_repo.identifier
+      github_app_installation_id = var.vcs_repo.github_app_installation_id
+    }
+  }
 }
