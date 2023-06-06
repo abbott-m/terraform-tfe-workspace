@@ -55,9 +55,9 @@ variable "variable_set_ids" {
 }
 
 variable "variables" {
-  default     = {}
-  description = "A map of variables to add to the workspace."
-  type = map(object({
+  default     = []
+  description = "A list of variables to add to the workspace."
+  type = list(object({
     category    = string
     description = optional(string)
     hcl         = optional(bool)

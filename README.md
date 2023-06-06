@@ -42,7 +42,7 @@ No modules.
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | The name of the project to use. | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | A list of tags to add to the workspace. | `list(string)` | `[]` | no |
 | <a name="input_variable_set_ids"></a> [variable\_set\_ids](#input\_variable\_set\_ids) | A list of variable set IDs to associate with the workspace. | `list(string)` | `[]` | no |
-| <a name="input_variables"></a> [variables](#input\_variables) | A map of variables to add to the workspace. | <pre>map(object({<br>    category    = string<br>    description = optional(string)<br>    hcl         = optional(bool)<br>    key         = string<br>    sensitive   = optional(bool)<br>    value       = string<br>  }))</pre> | `{}` | no |
+| <a name="input_variables"></a> [variables](#input\_variables) | A list of variables to add to the workspace. | <pre>list(object({<br>    category    = string<br>    description = optional(string)<br>    hcl         = optional(bool)<br>    key         = string<br>    sensitive   = optional(bool)<br>    value       = string<br>  }))</pre> | `[]` | no |
 | <a name="input_vcs_repo"></a> [vcs\_repo](#input\_vcs\_repo) | The VCS repository to associate with the workspace. | <pre>object({<br>    github_app_installation_id = string<br>    identifier                 = string<br>  })</pre> | `null` | no |
 
 ## Outputs

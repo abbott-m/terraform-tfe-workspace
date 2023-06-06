@@ -20,7 +20,7 @@ resource "tfe_workspace" "self" {
 }
 
 resource "tfe_variable" "self" {
-  for_each = var.variables
+  for_each = { for v in var.variables : v.key => v }
 
   category     = each.value.category
   description  = each.value.description
