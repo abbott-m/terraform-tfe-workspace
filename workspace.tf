@@ -18,3 +18,22 @@ resource "tfe_workspace" "self" {
     }
   }
 }
+
+resource "tfe_variable" "self" {
+  for_each = var.variables
+
+  category     = each.value.category
+  description  = each.value.description
+  hcl          = each.value.hcl
+  key          = each.value.key
+  sensitive    = each.value.sensitive
+  value        = each.value.value
+  workspace_id = tfe_workspace.self.id
+}
+
+resource "tfe_workspace_variable_set" "self" {
+  for_each = toset(var.variable_set_ids)
+
+  variable_set_id = each.key
+  workspace_id    = tfe_workspace.self.id
+}

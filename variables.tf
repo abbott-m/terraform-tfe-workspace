@@ -42,6 +42,31 @@ variable "project_name" {
   type        = string
 }
 
+variable "tags" {
+  default     = []
+  description = "A list of tags to add to the workspace."
+  type        = list(string)
+}
+
+variable "variable_set_ids" {
+  default     = []
+  description = "A list of variable set IDs to associate with the workspace."
+  type        = list(string)
+}
+
+variable "variables" {
+  default     = {}
+  description = "A map of variables to add to the workspace."
+  type = map(object({
+    category    = string
+    description = optional(string)
+    hcl         = optional(bool)
+    key         = string
+    sensitive   = optional(bool)
+    value       = string
+  }))
+}
+
 variable "vcs_repo" {
   default     = null
   description = "The VCS repository to associate with the workspace."
@@ -49,10 +74,4 @@ variable "vcs_repo" {
     github_app_installation_id = string
     identifier                 = string
   })
-}
-
-variable "tags" {
-  default     = []
-  description = "A list of tags to add to the workspace."
-  type        = list(string)
 }
