@@ -32,6 +32,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_agent_pool_id"></a> [agent\_pool\_id](#input\_agent\_pool\_id) | ID of the agent pool to associate with the workspace. | `string` | `null` | no |
 | <a name="input_allow_destroy_plan"></a> [allow\_destroy\_plan](#input\_allow\_destroy\_plan) | Whether to allow the creation of destroy plans. | `bool` | `false` | no |
 | <a name="input_assessments_enabled"></a> [assessments\_enabled](#input\_assessments\_enabled) | Whether to enable health assesments. | `bool` | `false` | no |
 | <a name="input_auto_apply"></a> [auto\_apply](#input\_auto\_apply) | Whether to automatically apply changes when a Terraform plan is successful. | `bool` | `false` | no |

@@ -1,3 +1,9 @@
+variable "agent_pool_id" {
+  default     = null
+  description = "ID of the agent pool to associate with the workspace."
+  type        = string
+}
+
 variable "allow_destroy_plan" {
   default     = false
   description = "Whether to allow the creation of destroy plans."

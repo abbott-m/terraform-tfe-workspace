@@ -1,7 +1,8 @@
 resource "tfe_workspace" "self" {
+  agent_pool_id       = var.agent_pool_id
   allow_destroy_plan  = var.allow_destroy_plan
-  auto_apply          = var.auto_apply
   assessments_enabled = var.assessments_enabled
+  auto_apply          = var.auto_apply
   description         = var.description
   execution_mode      = var.execution_mode
   name                = var.name
