@@ -43,8 +43,8 @@ variable "organization_name" {
   type        = string
 }
 
-variable "project_name" {
-  description = "The name of the project to use."
+variable "project_id" {
+  description = "The id of the project to use."
   type        = string
 }
 

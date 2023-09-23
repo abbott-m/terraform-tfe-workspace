@@ -7,7 +7,7 @@ resource "tfe_workspace" "self" {
   execution_mode      = var.execution_mode
   name                = var.name
   organization        = data.tfe_organization.self.name
-  project_id          = data.tfe_project.self.id
+  project_id          = var.project_id
   tag_names           = var.tags
 
   dynamic "vcs_repo" {
