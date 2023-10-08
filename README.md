@@ -12,13 +12,13 @@ Terraform module which creates Terraform Enterprise workspace resources.
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | 0.48.0 |
+| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | 0.49.2 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.48.0 |
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.49.2 |
 
 ## Modules
 
@@ -28,11 +28,11 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [tfe_run_trigger.self](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/run_trigger) | resource |
-| [tfe_variable.self](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/variable) | resource |
-| [tfe_workspace.self](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/workspace) | resource |
-| [tfe_workspace_variable_set.self](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/workspace_variable_set) | resource |
-| [tfe_organization.self](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/data-sources/organization) | data source |
+| [tfe_run_trigger.self](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/run_trigger) | resource |
+| [tfe_variable.self](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/variable) | resource |
+| [tfe_workspace.self](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace) | resource |
+| [tfe_workspace_variable_set.self](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/resources/workspace_variable_set) | resource |
+| [tfe_organization.self](https://registry.terraform.io/providers/hashicorp/tfe/0.49.2/docs/data-sources/organization) | data source |
 
 ## Inputs
 
