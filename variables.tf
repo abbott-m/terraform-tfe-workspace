@@ -48,6 +48,12 @@ variable "project_id" {
   type        = string
 }
 
+variable "run_trigger_workspace_ids" {
+  default     = []
+  description = "A list of workspace IDs to associate with the workspace."
+  type        = list(string)
+}
+
 variable "tags" {
   default     = []
   description = "A list of tags to add to the workspace."

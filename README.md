@@ -28,6 +28,7 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [tfe_run_trigger.self](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/run_trigger) | resource |
 | [tfe_variable.self](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/variable) | resource |
 | [tfe_workspace.self](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/workspace) | resource |
 | [tfe_workspace_variable_set.self](https://registry.terraform.io/providers/hashicorp/tfe/0.48.0/docs/resources/workspace_variable_set) | resource |
@@ -46,6 +47,7 @@ No modules.
 | <a name="input_name"></a> [name](#input\_name) | The name of the workspace to create. | `string` | n/a | yes |
 | <a name="input_organization_name"></a> [organization\_name](#input\_organization\_name) | The name of the organization to use. | `string` | n/a | yes |
 | <a name="input_project_id"></a> [project\_id](#input\_project\_id) | The id of the project to use. | `string` | n/a | yes |
+| <a name="input_run_trigger_workspace_ids"></a> [run\_trigger\_workspace\_ids](#input\_run\_trigger\_workspace\_ids) | A list of workspace IDs to associate with the workspace. | `list(string)` | `[]` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A list of tags to add to the workspace. | `list(string)` | `[]` | no |
 | <a name="input_variable_set_ids"></a> [variable\_set\_ids](#input\_variable\_set\_ids) | A list of variable set IDs to associate with the workspace. | `list(string)` | `[]` | no |
 | <a name="input_variables"></a> [variables](#input\_variables) | A list of variables to add to the workspace. | <pre>list(object({<br>    category    = string<br>    description = optional(string)<br>    hcl         = optional(bool)<br>    key         = string<br>    sensitive   = optional(bool)<br>    value       = string<br>  }))</pre> | `[]` | no |
