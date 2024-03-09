@@ -4,7 +4,6 @@ resource "tfe_workspace" "self" {
   assessments_enabled = var.assessments_enabled
   auto_apply          = var.auto_apply
   description         = var.description
-  execution_mode      = var.execution_mode
   name                = var.name
   organization        = data.tfe_organization.self.name
   project_id          = var.project_id
@@ -44,4 +43,9 @@ resource "tfe_run_trigger" "self" {
 
   sourceable_id = each.key
   workspace_id  = tfe_workspace.self.id
+}
+
+resource "tfe_workspace_settings" "self" {
+  workspace_id   = tfe_workspace.self.id
+  execution_mode = var.execution_mode
 }
