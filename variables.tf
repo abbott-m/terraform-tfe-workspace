@@ -83,6 +83,7 @@ variable "vcs_repo" {
   default     = null
   description = "The VCS repository to associate with the workspace."
   type = object({
+    branch                     = string
     github_app_installation_id = string
     identifier                 = string
   })
